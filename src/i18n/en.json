@@ -1,0 +1,25 @@
+{
+  "header": {
+    "appName": "Cloud POS",
+    "language": "Language",
+    "switchToDark": "Switch to dark mode",
+    "switchToLight": "Switch to light mode"
+  },
+  "home": {
+    "title": "Cloud POS Dashboard",
+    "subtitle": "Multi-tenant offline-first Point of Sale",
+    "welcome": "Welcome to your restaurant management system",
+    "features": {
+      "offline": "Works offline with SQLite",
+      "multiLang": "English / Amharic / Afaan Oromoo",
+      "darkMode": "Light & Dark mode support",
+      "payments": "ETHQR + USSD Push payments"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete"
+  }
+}

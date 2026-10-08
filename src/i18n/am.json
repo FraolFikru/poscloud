@@ -1,0 +1,25 @@
+{
+  "header": {
+    "appName": "ክላውድ ፖስ",
+    "language": "ቋንቋ",
+    "switchToDark": "ወደ ጨለማ ሁነታ ቀይር",
+    "switchToLight": "ወደ ብርሃን ሁነታ ቀይር"
+  },
+  "home": {
+    "title": "ክላውድ ፖስ ዳሽቦርድ",
+    "subtitle": "ብዙ ተከራይ የሚደግፍ ከመስመር ውጭ የመጀመሪያ የሽያጭ ነጥብ",
+    "welcome": "ወደ ሬስቶራንት አስተዳደር ስርዓትዎ እንኳን በደህና መጡ",
+    "features": {
+      "offline": "ከመስመር ውጭ በ SQLite ይሰራል",
+      "multiLang": "እንግሊዝኛ / አማርኛ / አፋን ኦሮሞ",
+      "darkMode": "ብርሃን እና ጨለማ ሁነታ ድጋፍ",
+      "payments": "ETHQR + USSD Push ክፍያዎች"
+    }
+  },
+  "common": {
+    "loading": "በመጫን ላይ...",
+    "save": "አስቀምጥ",
+    "cancel": "ሰርዝ",
+    "delete": "ሰርዝ"
+  }
+}

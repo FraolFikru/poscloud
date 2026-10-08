@@ -1,0 +1,25 @@
+{
+  "header": {
+    "appName": "Cloud POS",
+    "language": "Afaan",
+    "switchToDark": "Gara haala dukkanaatti jijjiiri",
+    "switchToLight": "Gara haala ifaatti jijjiiri"
+  },
+  "home": {
+    "title": "Daashboordii Cloud POS",
+    "subtitle": "Sirna gurgurtaa multi-tenant offline-first",
+    "welcome": "Baga gara sirna bulchiinsa restoraantii keessan dhuftan",
+    "features": {
+      "offline": "Offline SQLite waliin hojjeta",
+      "multiLang": "English / Afaan Amaaraa / Afaan Oromoo",
+      "darkMode": "Haala ifaa fi dukkanaa deeggarsa",
+      "payments": "Kaffaltii ETHQR + USSD Push"
+    }
+  },
+  "common": {
+    "loading": "Fe'aa jira...",
+    "save": "Olkaa'i",
+    "cancel": "Haqi",
+    "delete": "Haqi"
+  }
+}
