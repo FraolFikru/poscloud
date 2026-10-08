@@ -1,9 +1,19 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { getStats } from "@/lib/store";
 
 export default function HomePage() {
   const { t } = useTranslation();
+  const [stats, setStats] = useState({ openTables: 0, activeOrders: 0, todaySales: 0, unpaid: 0 });
+
+  useEffect(() => {
+    setStats(getStats());
+    const interval = setInterval(() => setStats(getStats()), 2000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="space-y-8">
@@ -16,52 +26,42 @@ export default function HomePage() {
         </p>
       </div>
 
-      <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
-        <p className="text-slate-700 dark:text-zinc-300">
-          {t("home.welcome")}
-        </p>
-
-        <ul className="mt-6 grid gap-3 sm:grid-cols-2">
-          <li className="flex items-start gap-3 rounded-lg bg-slate-50 p-4 dark:bg-zinc-800/50">
-            <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-sm text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-400">
-              ✓
-            </span>
-            <span className="text-sm text-slate-700 dark:text-zinc-300">
-              {t("home.features.offline")}
-            </span>
-          </li>
-          <li className="flex items-start gap-3 rounded-lg bg-slate-50 p-4 dark:bg-zinc-800/50">
-            <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-sm text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-400">
-              ✓
-            </span>
-            <span className="text-sm text-slate-700 dark:text-zinc-300">
-              {t("home.features.multiLang")}
-            </span>
-          </li>
-          <li className="flex items-start gap-3 rounded-lg bg-slate-50 p-4 dark:bg-zinc-800/50">
-            <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-sm text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-400">
-              ✓
-            </span>
-            <span className="text-sm text-slate-700 dark:text-zinc-300">
-              {t("home.features.darkMode")}
-            </span>
-          </li>
-          <li className="flex items-start gap-3 rounded-lg bg-slate-50 p-4 dark:bg-zinc-800/50">
-            <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-sm text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-400">
-              ✓
-            </span>
-            <span className="text-sm text-slate-700 dark:text-zinc-300">
-              {t("home.features.payments")}
-            </span>
-          </li>
-        </ul>
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
+          <p className="text-sm font-medium text-slate-500 dark:text-zinc-400">{t("home.stats.openTables")}</p>
+          <p className="mt-1 text-3xl font-bold text-slate-900 dark:text-zinc-50">{stats.openTables}</p>
+        </div>
+        <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
+          <p className="text-sm font-medium text-slate-500 dark:text-zinc-400">{t("home.stats.activeOrders")}</p>
+          <p className="mt-1 text-3xl font-bold text-slate-900 dark:text-zinc-50">{stats.activeOrders}</p>
+        </div>
+        <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
+          <p className="text-sm font-medium text-slate-500 dark:text-zinc-400">{t("home.stats.todaySales")}</p>
+          <p className="mt-1 text-3xl font-bold text-emerald-600 dark:text-emerald-400">
+            {stats.todaySales.toLocaleString()} <span className="text-base font-normal">{t("common.etb")}</span>
+          </p>
+        </div>
+        <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
+          <p className="text-sm font-medium text-slate-500 dark:text-zinc-400">{t("home.stats.unpaid")}</p>
+          <p className="mt-1 text-3xl font-bold text-red-600 dark:text-red-400">
+            {stats.unpaid.toLocaleString()} <span className="text-base font-normal">{t("common.etb")}</span>
+          </p>
+        </div>
       </div>
 
-      <div className="rounded-xl border border-dashed border-slate-300 bg-slate-50 p-8 text-center dark:border-zinc-700 dark:bg-zinc-900/50">
-        <p className="text-sm text-slate-500 dark:text-zinc-400">
-          This is the starter dashboard. Next steps: Orders, Tables, Payments,
-          Kitchen display, etc.
-        </p>
+      <div className="grid gap-4 sm:grid-cols-3">
+        <Link href="/tables" className="flex flex-col items-center justify-center rounded-xl border border-slate-200 bg-white p-8 text-center shadow-sm transition hover:border-emerald-300 hover:bg-emerald-50 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-emerald-700 dark:hover:bg-emerald-950/30">
+          <span className="text-4xl">🪑</span>
+          <span className="mt-3 text-lg font-semibold text-slate-900 dark:text-zinc-100">{t("nav.tables")}</span>
+        </Link>
+        <Link href="/orders" className="flex flex-col items-center justify-center rounded-xl border border-slate-200 bg-white p-8 text-center shadow-sm transition hover:border-emerald-300 hover:bg-emerald-50 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-emerald-700 dark:hover:bg-emerald-950/30">
+          <span className="text-4xl">📋</span>
+          <span className="mt-3 text-lg font-semibold text-slate-900 dark:text-zinc-100">{t("nav.orders")}</span>
+        </Link>
+        <Link href="/menu" className="flex flex-col items-center justify-center rounded-xl border border-slate-200 bg-white p-8 text-center shadow-sm transition hover:border-emerald-300 hover:bg-emerald-50 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-emerald-700 dark:hover:bg-emerald-950/30">
+          <span className="text-4xl">🍽️</span>
+          <span className="mt-3 text-lg font-semibold text-slate-900 dark:text-zinc-100">{t("nav.menu")}</span>
+        </Link>
       </div>
     </div>
   );
