@@ -5,21 +5,71 @@
     "switchToDark": "Gara haala dukkanaatti jijjiiri",
     "switchToLight": "Gara haala ifaatti jijjiiri"
   },
+  "nav": {
+    "dashboard": "Daashboordii",
+    "tables": "Teebuloota",
+    "orders": "Ajaja",
+    "menu": "Meenuu"
+  },
   "home": {
     "title": "Daashboordii Cloud POS",
     "subtitle": "Sirna gurgurtaa multi-tenant offline-first",
     "welcome": "Baga gara sirna bulchiinsa restoraantii keessan dhuftan",
-    "features": {
-      "offline": "Offline SQLite waliin hojjeta",
-      "multiLang": "English / Afaan Amaaraa / Afaan Oromoo",
-      "darkMode": "Haala ifaa fi dukkanaa deeggarsa",
-      "payments": "Kaffaltii ETHQR + USSD Push"
+    "stats": {
+      "openTables": "Teebuloota banaman",
+      "activeOrders": "Ajaja hojjetaa jiran",
+      "todaySales": "Gurgurtaa har'aa",
+      "unpaid": "Hin kaffalamne"
     }
+  },
+  "tables": {
+    "title": "Kaartaa Teebulaa",
+    "subtitle": "Teebula filadhuu ajaja jalqabuuf ykn ilaaluuf",
+    "available": "Baname",
+    "occupied": "Qabamaa jira",
+    "reserved": "Qabamaa jira",
+    "table": "Teebula",
+    "guests": "Keessummoota",
+    "startOrder": "Ajaja jalqabi",
+    "viewOrder": "Ajaja ilaali"
+  },
+  "orders": {
+    "title": "Ajaja",
+    "subtitle": "Ajaja ammaa fi dhiheenya",
+    "newOrder": "Ajaja haaraa",
+    "order": "Ajaja",
+    "table": "Teebula",
+    "status": "Haala",
+    "total": "Waliigala",
+    "items": "Meeshaalee",
+    "unpaid": "Hin kaffalamne",
+    "pending": "Eeggamaa jira",
+    "paid": "Kaffalame",
+    "empty": "Ajaja hin jiru",
+    "addItem": "Meeshaa dabali",
+    "remove": "Haqi",
+    "pay": "Kaffali",
+    "cash": "Maallaqa",
+    "ethqr": "ETHQR",
+    "ussd": "USSD Push",
+    "clearTable": "Teebula qulqulleessi",
+    "paymentSuccess": "Kaffaltiin milkaa'e! Teebuliin qulqulleeffame."
+  },
+  "menu": {
+    "title": "Meenuu",
+    "subtitle": "Meeshaalee jiran",
+    "addToOrder": "Gara ajajaatti dabali",
+    "price": "Gatii",
+    "category": "Ramaddii"
   },
   "common": {
     "loading": "Fe'aa jira...",
     "save": "Olkaa'i",
     "cancel": "Haqi",
-    "delete": "Haqi"
+    "delete": "Haqi",
+    "back": "Deebi'i",
+    "confirm": "Mirkaneessi",
+    "close": "Cufi",
+    "etb": "ETB"
   }
 }
