@@ -5,21 +5,71 @@
     "switchToDark": "ወደ ጨለማ ሁነታ ቀይር",
     "switchToLight": "ወደ ብርሃን ሁነታ ቀይር"
   },
+  "nav": {
+    "dashboard": "ዳሽቦርድ",
+    "tables": "ጠረጴዛዎች",
+    "orders": "ትዕዛዞች",
+    "menu": "ምናሌ"
+  },
   "home": {
     "title": "ክላውድ ፖስ ዳሽቦርድ",
     "subtitle": "ብዙ ተከራይ የሚደግፍ ከመስመር ውጭ የመጀመሪያ የሽያጭ ነጥብ",
     "welcome": "ወደ ሬስቶራንት አስተዳደር ስርዓትዎ እንኳን በደህና መጡ",
-    "features": {
-      "offline": "ከመስመር ውጭ በ SQLite ይሰራል",
-      "multiLang": "እንግሊዝኛ / አማርኛ / አፋን ኦሮሞ",
-      "darkMode": "ብርሃን እና ጨለማ ሁነታ ድጋፍ",
-      "payments": "ETHQR + USSD Push ክፍያዎች"
+    "stats": {
+      "openTables": "ክፍት ጠረጴዛዎች",
+      "activeOrders": "ንቁ ትዕዛዞች",
+      "todaySales": "የዛሬ ሽያጭ",
+      "unpaid": "ያልተከፈለ"
     }
+  },
+  "tables": {
+    "title": "የጠረጴዛ ካርታ",
+    "subtitle": "ትዕዛዝ ለመጀመር ወይም ለማየት ጠረጴዛ ይምረጡ",
+    "available": "ክፍት",
+    "occupied": "ተይዟል",
+    "reserved": "ተይዟል",
+    "table": "ጠረጴዛ",
+    "guests": "እንግዶች",
+    "startOrder": "ትዕዛዝ ጀምር",
+    "viewOrder": "ትዕዛዝ እይ"
+  },
+  "orders": {
+    "title": "ትዕዛዞች",
+    "subtitle": "አሁን ያሉ እና የቅርብ ጊዜ ትዕዛዞች",
+    "newOrder": "አዲስ ትዕዛዝ",
+    "order": "ትዕዛዝ",
+    "table": "ጠረጴዛ",
+    "status": "ሁኔታ",
+    "total": "ጠቅላላ",
+    "items": "እቃዎች",
+    "unpaid": "ያልተከፈለ",
+    "pending": "በመጠባበቅ ላይ",
+    "paid": "ተከፍሏል",
+    "empty": "እስካሁን ትዕዛዝ የለም",
+    "addItem": "እቃ ጨምር",
+    "remove": "አስወግድ",
+    "pay": "ክፈል",
+    "cash": "ጥሬ ገንዘብ",
+    "ethqr": "ETHQR",
+    "ussd": "USSD Push",
+    "clearTable": "ጠረጴዛ አጽዳ",
+    "paymentSuccess": "ክፍያ ተሳክቷል! ጠረጴዛ ተጸድቷል።"
+  },
+  "menu": {
+    "title": "ምናሌ",
+    "subtitle": "ያሉ እቃዎች",
+    "addToOrder": "ወደ ትዕዛዝ ጨምር",
+    "price": "ዋጋ",
+    "category": "ምድብ"
   },
   "common": {
     "loading": "በመጫን ላይ...",
     "save": "አስቀምጥ",
     "cancel": "ሰርዝ",
-    "delete": "ሰርዝ"
+    "delete": "ሰርዝ",
+    "back": "ተመለስ",
+    "confirm": "አረጋግጥ",
+    "close": "ዝጋ",
+    "etb": "ብር"
   }
 }
