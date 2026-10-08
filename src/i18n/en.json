@@ -5,21 +5,71 @@
     "switchToDark": "Switch to dark mode",
     "switchToLight": "Switch to light mode"
   },
+  "nav": {
+    "dashboard": "Dashboard",
+    "tables": "Tables",
+    "orders": "Orders",
+    "menu": "Menu"
+  },
   "home": {
     "title": "Cloud POS Dashboard",
     "subtitle": "Multi-tenant offline-first Point of Sale",
     "welcome": "Welcome to your restaurant management system",
-    "features": {
-      "offline": "Works offline with SQLite",
-      "multiLang": "English / Amharic / Afaan Oromoo",
-      "darkMode": "Light & Dark mode support",
-      "payments": "ETHQR + USSD Push payments"
+    "stats": {
+      "openTables": "Open Tables",
+      "activeOrders": "Active Orders",
+      "todaySales": "Today's Sales",
+      "unpaid": "Unpaid"
     }
+  },
+  "tables": {
+    "title": "Table Map",
+    "subtitle": "Select a table to start or view an order",
+    "available": "Available",
+    "occupied": "Occupied",
+    "reserved": "Reserved",
+    "table": "Table",
+    "guests": "Guests",
+    "startOrder": "Start Order",
+    "viewOrder": "View Order"
+  },
+  "orders": {
+    "title": "Orders",
+    "subtitle": "Current and recent orders",
+    "newOrder": "New Order",
+    "order": "Order",
+    "table": "Table",
+    "status": "Status",
+    "total": "Total",
+    "items": "Items",
+    "unpaid": "Unpaid",
+    "pending": "Pending",
+    "paid": "Paid",
+    "empty": "No orders yet",
+    "addItem": "Add Item",
+    "remove": "Remove",
+    "pay": "Pay",
+    "cash": "Cash",
+    "ethqr": "ETHQR",
+    "ussd": "USSD Push",
+    "clearTable": "Clear Table",
+    "paymentSuccess": "Payment successful! Table cleared."
+  },
+  "menu": {
+    "title": "Menu",
+    "subtitle": "Available items",
+    "addToOrder": "Add to Order",
+    "price": "Price",
+    "category": "Category"
   },
   "common": {
     "loading": "Loading...",
     "save": "Save",
     "cancel": "Cancel",
-    "delete": "Delete"
+    "delete": "Delete",
+    "back": "Back",
+    "confirm": "Confirm",
+    "close": "Close",
+    "etb": "ETB"
   }
 }
